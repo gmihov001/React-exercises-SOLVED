@@ -8,6 +8,7 @@ const Alert = props => {
 		red: "alert-danger",
 		orange: "alert-warning"
 	};
+
 	if (colorClasses[props.color] === undefined) alert(`The color ${props.color} is not in the possible list of colors`);
 
 	return (
@@ -16,6 +17,7 @@ const Alert = props => {
 		</div>
 	);
 };
+
 Alert.propTypes = {
 	color: PropTypes.string,
 	text: PropTypes.string
